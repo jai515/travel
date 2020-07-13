@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="header" class="row jumbotron">
+      <h1>Vacation Destinations WishList</h1>
+      <p>
+        Found exciting places to visition on your next vacation? Use the form
+        below to add them to your wishlist
+      </p>
+    </div>
+
+    <div id="contentContainer" class="row d-flex flex-wrap">
+      <div id="inputForm" class="col-3">
+        <form id="form" class="needs-validation">
+          <div class="form-group">
+            <label for="destinationForm">Destination Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="destination"
+              minlength="2"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="destinationForm">Location</label>
+            <input
+              type="text"
+              class="form-control"
+              id="location"
+              minlength="2"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="destinationForm">Photo</label>
+            <input type="url" class="form-control" id="photo" />
+          </div>
+          <div class="form-group">
+            <label for="destinationForm">Description</label>
+            <textarea
+              placeholder="Where is it located?"
+              class="form-control inputfield"
+              id="description"
+            ></textarea>
+          </div>
+          <button id="button" type="submit" class="btn btn-primary">
+            Add to List
+          </button>
+        </form>
+      </div>
+      <div id="cardSection" class="container col-9 justify-content-center">
+        <div id="wishTitle" class="row align-top text-center">
+          <h5 id="cardSectionTitle">Enter destination details</h5>
+        </div>
+        <div
+          id="cardContainer"
+          class="row container.fluid justify-content-center"
+        ></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
